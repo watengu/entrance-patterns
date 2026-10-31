@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>パターンA｜アプリLP型 — サンプルアプリ</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif; color:#16213a; line-height:1.7; background:#fff; }
+  .wrap { max-width:920px; margin:0 auto; padding:0 20px; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:18px 0; }
+  .logo { font-weight:800; font-size:18px; } .logo span{ color:#3556e8; }
+  .hcta { background:#3556e8; color:#fff; font-size:13px; font-weight:700; padding:9px 18px; border-radius:999px; text-decoration:none; }
+  .hero { display:grid; grid-template-columns:1.15fr .85fr; gap:32px; align-items:center; padding:36px 0 56px; }
+  @media (max-width:720px){ .hero{ grid-template-columns:1fr; } }
+  .badge { display:inline-block; background:#eef2ff; color:#3556e8; font-size:12.5px; font-weight:700; padding:5px 12px; border-radius:999px; }
+  h1 { font-size:34px; line-height:1.3; margin:16px 0 12px; }
+  .hero p { color:#4a5568; font-size:15px; }
+  .stats { display:flex; gap:28px; margin:24px 0; }
+  .stats b { font-size:24px; display:block; line-height:1.2; }
+  .stats small { color:#8a94a6; font-size:12px; }
+  .cta { display:inline-block; background:#3556e8; color:#fff; font-weight:700; padding:14px 34px; border-radius:999px; text-decoration:none; font-size:15px; }
+  .cta-sub { font-size:12px; color:#8a94a6; margin-top:8px; }
+  .phone { background:#16213a; border-radius:36px; padding:12px; max-width:270px; margin:0 auto; box-shadow:0 24px 48px rgba(22,33,58,.25); }
+  .screen { background:linear-gradient(160deg,#eef2ff,#fff); border-radius:26px; padding:20px 16px; min-height:380px; }
+  .screen .app { font-size:12px; color:#8a94a6; font-weight:700; letter-spacing:.08em; }
+  .screen h3 { font-size:17px; margin:6px 0 14px; }
+  .task { background:#fff; border:1px solid #e3e7ee; border-radius:12px; padding:10px 12px; font-size:13px; margin-bottom:10px; display:flex; justify-content:space-between; }
+  .task em { font-style:normal; color:#3556e8; font-weight:700; }
+  section { padding:44px 0; }
+  .alt { background:#f6f7f9; }
+  h2 { font-size:24px; margin-bottom:8px; }
+  .sec-lead { color:#4a5568; font-size:14.5px; margin-bottom:24px; }
+  .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  @media (max-width:720px){ .steps{ grid-template-columns:1fr; } }
+  .step { background:#fff; border:1px solid #e3e7ee; border-radius:14px; padding:20px; }
+  .alt .step { background:#fff; }
+  .step .num { font-size:26px; font-weight:800; color:#3556e8; }
+  .step h3 { font-size:16px; margin:6px 0 4px; }
+  .step p { font-size:13.5px; color:#55617a; }
+  .plans { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:720px){ .plans{ grid-template-columns:1fr; } }
+  .plan { border:1px solid #e3e7ee; border-radius:14px; padding:22px; background:#fff; }
+  .plan.hot { border-color:#3556e8; box-shadow:0 10px 26px rgba(53,86,232,.12); }
+  .plan .price { font-size:26px; font-weight:800; margin:6px 0; }
+  .plan li { font-size:13.5px; color:#4a5568; margin-left:18px; }
+  .voices { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:720px){ .voices{ grid-template-columns:1fr; } }
+  .voice { background:#fff; border:1px solid #e3e7ee; border-radius:14px; padding:20px; font-size:14px; }
+  .voice .who { margin-top:10px; font-size:12.5px; color:#8a94a6; }
+  details { background:#fff; border:1px solid #e3e7ee; border-radius:12px; padding:16px 18px; margin-bottom:10px; }
+  summary { font-weight:700; cursor:pointer; font-size:14.5px; }
+  details p { font-size:13.5px; color:#4a5568; margin-top:8px; }
+  .final { text-align:center; padding:56px 0 64px; }
+  footer { border-top:1px solid #e3e7ee; padding:20px 0 32px; font-size:12px; color:#9aa3b5; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Sample<span>App</span></div>
+    <a class="hcta" href="#cta">無料で始める</a>
+  </header>
+
+  <div class="hero">
+    <div>
+      <span class="badge">導入店舗 1,200店突破（サンプル表示）</span>
+      <h1>毎日の「やること」を、<br>開いた瞬間に見える化。</h1>
+      <p>サンプルアプリは、タスクと予定を1画面に集約する製品ページの見本です。ヒーロー → 数字 → 使い方 → 料金 → 声 → FAQ → 申し込み、の順で読ませるのがパターンAの文法です。</p>
+      <div class="stats">
+        <div><b>98%</b><small>継続率（サンプル）</small></div>
+        <div><b>4.8</b><small>ストア評価（サンプル）</small></div>
+        <div><b>3分</b><small>初期設定の目安</small></div>
+      </div>
+      <a class="cta" href="#cta">無料で始める</a>
+      <div class="cta-sub">クレジットカード不要・いつでも解約可</div>
+    </div>
+    <div class="phone"><div class="screen">
+      <div class="app">SAMPLE APP — TODAY</div>
+      <h3>今日のタスク</h3>
+      <div class="task"><span>朝の確認メール返信</span><em>完了</em></div>
+      <div class="task"><span>提案書のドラフト作成</span><em>進行中</em></div>
+      <div class="task"><span>15:00 定例ミーティング</span><em>予定</em></div>
+      <div class="task"><span>経費の入力</span><em>未着手</em></div>
+      <div class="task"><span>明日の準備チェック</span><em>未着手</em></div>
+    </div></div>
+  </div>
+</div>
+
+<section class="alt"><div class="wrap">
+  <h2>使い方は3ステップ</h2>
+  <p class="sec-lead">番号つきセクションで「流れ」を先に掴ませるのが、この型の要点です。</p>
+  <div class="steps">
+    <div class="step"><div class="num">01</div><h3>登録する</h3><p>メールアドレスだけで開始。初期設定は約3分で終わります。</p></div>
+    <div class="step"><div class="num">02</div><h3>タスクを入れる</h3><p>今日の「やること」を並べるだけ。自動で優先順位が付きます。</p></div>
+    <div class="step"><div class="num">03</div><h3>開いて進める</h3><p>朝に1回開けば、その日の地図ができています。</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>料金</h2>
+  <p class="sec-lead">中身と料金は、隠さず途中で提示します。</p>
+  <div class="plans">
+    <div class="plan"><h3>フリー</h3><div class="price">¥0</div><ul><li>タスク管理の基本機能</li><li>端末1台まで</li></ul></div>
+    <div class="plan hot"><h3>プロ</h3><div class="price">¥980<span style="font-size:13px; font-weight:400;"> / 月（サンプル）</span></div><ul><li>全機能・端末無制限</li><li>優先サポート</li></ul></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2>利用者の声</h2>
+  <p class="sec-lead">証拠は数字の次に「声」で置きます。（以下サンプル文）</p>
+  <div class="voices">
+    <div class="voice">「朝の立ち上がりが速くなりました。開けば今日の順番が決まっているのが助かります。」<div class="who">30代・店舗運営（サンプル）</div></div>
+    <div class="voice">「スタッフ全員で同じ画面を見るので、引き継ぎの漏れが減りました。」<div class="who">40代・マネージャー（サンプル）</div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>よくある質問</h2>
+  <details><summary>無料プランのままでも使えますか？</summary><p>はい。基本機能は無料のまま継続利用できます（サンプル回答）。</p></details>
+  <details><summary>解約はいつでもできますか？</summary><p>設定画面からいつでも可能です。解約後も月末まで利用できます（サンプル回答）。</p></details>
+</div></section>
+
+<div class="final wrap" id="cta">
+  <h2>まずは無料で試せます</h2>
+  <p class="sec-lead">押させたい動作は1つに絞る。それがパターンAの締め方です。</p>
+  <a class="cta" href="#">無料で始める</a>
+</div>
+
+<footer>Pattern A — アプリLP型サンプル（数値・声はすべてサンプル表示）</footer>
+</body>
+</html>

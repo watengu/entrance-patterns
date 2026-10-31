@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>パターンB｜プロフィール集約型 — サンプル</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif; background:linear-gradient(180deg,#fdf3f6,#fdf9f4); color:#3a2e35; line-height:1.7; min-height:100vh; }
+  .wrap { max-width:480px; margin:0 auto; padding:44px 20px 56px; text-align:center; }
+  .avatar { width:104px; height:104px; border-radius:50%; margin:0 auto; background:radial-gradient(circle at 32% 30%, #ffd9e4, #f2a7bf 60%, #e86a92); display:flex; align-items:center; justify-content:center; font-size:38px; font-weight:800; color:#fff; box-shadow:0 12px 26px rgba(232,106,146,.35); border:4px solid #fff; }
+  h1 { font-size:23px; margin:16px 0 2px; }
+  .handle { color:#b08a99; font-size:13px; }
+  .bio { font-size:13.5px; color:#6b5560; margin:12px auto 4px; max-width:340px; }
+  .tags { font-size:12px; color:#c39; margin-bottom:24px; }
+  .tags span { background:#fff; border:1px solid #f6dbe4; padding:3px 10px; border-radius:999px; margin:0 2px; display:inline-block; color:#b4567c; }
+  .main-btn { display:block; background:#e86a92; color:#fff; font-weight:800; font-size:16px; padding:16px; border-radius:16px; text-decoration:none; box-shadow:0 12px 24px rgba(232,106,146,.35); }
+  .main-btn small { display:block; font-weight:400; font-size:12px; opacity:.9; }
+  .sec { text-align:left; font-size:12px; letter-spacing:.14em; color:#b08a99; font-weight:700; margin:30px 0 10px; }
+  .link { display:flex; align-items:center; gap:12px; background:#fff; border:1px solid #f3e2e9; border-radius:14px; padding:14px 16px; text-decoration:none; color:inherit; margin-bottom:10px; text-align:left; transition:transform .15s, box-shadow .15s; }
+  .link:hover { transform:translateY(-1px); box-shadow:0 8px 20px rgba(180,90,130,.12); }
+  .link .ic { width:38px; height:38px; border-radius:10px; background:#fdf3f6; display:flex; align-items:center; justify-content:center; font-size:18px; flex:none; }
+  .link b { font-size:14.5px; display:block; line-height:1.4; }
+  .link small { color:#a08b96; font-size:12px; }
+  .link .arr { margin-left:auto; color:#d8b3c2; }
+  .badge-new { background:#e86a92; color:#fff; font-size:10px; font-weight:800; padding:2px 7px; border-radius:999px; margin-left:6px; vertical-align:2px; }
+  .sns { display:flex; justify-content:center; gap:12px; margin-top:26px; }
+  .sns a { width:42px; height:42px; border-radius:50%; background:#fff; border:1px solid #f3e2e9; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:16px; color:#b4567c; }
+  footer { margin-top:34px; font-size:11.5px; color:#c4a7b4; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="avatar">S</div>
+  <h1>サンプル はなこ</h1>
+  <div class="handle">@sample_hanako</div>
+  <p class="bio">プロフィール集約型（パターンB）の見本ページです。丸アイコンと名前が主役、一番見せたいボタンを先頭に置きます。</p>
+  <div class="tags"><span>美容</span><span>ファッション</span><span>東京</span></div>
+
+  <a class="main-btn" href="#">今週のおすすめを見る<small>一番見せたいものを、最初に1つだけ大きく</small></a>
+
+  <div class="sec">NEW — 最新リンクで「更新感」を出す</div>
+  <a class="link" href="#"><span class="ic">🛍️</span><span><b>秋の新作まとめ<span class="badge-new">NEW</span></b><small>昨日更新 — 最新の1件を上に残す</small></span><span class="arr">›</span></a>
+  <a class="link" href="#"><span class="ic">📖</span><span><b>プロフィールと自己紹介</b><small>はじめての方はこちら</small></span><span class="arr">›</span></a>
+
+  <div class="sec">LINKS — リンクは積み木式に</div>
+  <a class="link" href="#"><span class="ic">📷</span><span><b>Instagram</b><small>毎日のコーデを投稿中</small></span><span class="arr">›</span></a>
+  <a class="link" href="#"><span class="ic">🎵</span><span><b>TikTok</b><small>動画はこちら</small></span><span class="arr">›</span></a>
+  <a class="link" href="#"><span class="ic">🛒</span><span><b>オンラインショップ</b><small>セレクトアイテム販売中</small></span><span class="arr">›</span></a>
+  <a class="link" href="#"><span class="ic">✉️</span><span><b>お仕事のご依頼</b><small>お問い合わせフォームへ</small></span><span class="arr">›</span></a>
+
+  <div class="sns">
+    <a href="#" aria-label="Instagram">◉</a><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="Blog">✎</a>
+  </div>
+
+  <footer>Pattern B — プロフィール集約型サンプル（名称・内容はすべてサンプル表示）</footer>
+</div>
+</body>
+</html>

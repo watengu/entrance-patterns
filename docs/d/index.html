@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>パターンD｜会員制・秘匿型 — サンプル</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Hiragino Mincho ProN","Yu Mincho",serif; background:#131118; color:#e9e4d8; line-height:1.9; min-height:100vh; }
+  .wrap { max-width:760px; margin:0 auto; padding:56px 24px 72px; text-align:center; }
+  .mark { font-size:11px; letter-spacing:.34em; color:#b3924c; font-weight:700; }
+  .rule { width:44px; height:1px; background:#b3924c; margin:26px auto; opacity:.7; }
+  h1 { font-size:31px; font-weight:600; line-height:1.55; letter-spacing:.04em; }
+  @media (max-width:640px){ h1{ font-size:24px; } }
+  .lead { font-size:14.5px; color:#b8b2a4; max-width:520px; margin:22px auto 0; font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif; line-height:1.9; }
+  .proof { display:flex; justify-content:center; gap:44px; margin:44px 0 8px; flex-wrap:wrap; }
+  .proof div b { display:block; font-size:21px; color:#e9e4d8; font-weight:600; }
+  .proof div small { font-size:11.5px; color:#8f887a; letter-spacing:.08em; font-family:"Hiragino Kaku Gothic ProN",sans-serif; }
+  .note { font-size:12px; color:#8f887a; font-family:"Hiragino Kaku Gothic ProN",sans-serif; }
+  .cta { display:inline-block; margin-top:40px; border:1px solid #b3924c; color:#e9c979; padding:15px 44px; font-size:14.5px; letter-spacing:.14em; text-decoration:none; font-family:"Hiragino Kaku Gothic ProN",sans-serif; transition:background .2s,color .2s; }
+  .cta:hover { background:#b3924c; color:#131118; }
+  .flow { margin-top:56px; display:grid; grid-template-columns:repeat(3,1fr); gap:14px; font-family:"Hiragino Kaku Gothic ProN",sans-serif; }
+  @media (max-width:640px){ .flow{ grid-template-columns:1fr; } }
+  .flow div { border:1px solid #2c2836; padding:16px 12px; }
+  .flow b { display:block; font-size:13px; color:#e9e4d8; margin-bottom:4px; }
+  .flow span { font-size:12px; color:#8f887a; }
+  .hidden-note { margin-top:48px; font-size:12.5px; color:#6f6a5e; font-family:"Hiragino Kaku Gothic ProN",sans-serif; }
+  footer { margin-top:64px; font-size:11px; color:#57534a; letter-spacing:.1em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mark">MEMBERS ONLY — SAMPLE</div>
+  <div class="rule"></div>
+  <h1>ご紹介と審査のある方だけに、<br>開かれる場所があります。</h1>
+  <p class="lead">パターンDは「全部は見せない」型です。1画面に大きな約束を1つだけ置き、詳細・実物は問い合わせと審査の奥に置きます。一覧の全量公開はしません。</p>
+
+  <div class="proof">
+    <div><b>会員制</b><small>MEMBERSHIP</small></div>
+    <div><b>審査制</b><small>BY REVIEW</small></div>
+    <div><b>完全紹介制</b><small>REFERRAL ONLY</small></div>
+  </div>
+  <p class="note">※ 証拠は最小限に。数字を出す場合は、裏づけのあるものだけを表示します。</p>
+
+  <a class="cta" href="#">審査に進む</a>
+
+  <div class="flow">
+    <div><b>1. お問い合わせ</b><span>フォームからご連絡ください</span></div>
+    <div><b>2. 審査</b><span>基準に基づき確認します</span></div>
+    <div><b>3. ご案内</b><span>通過した方へだけ詳細をお送りします</span></div>
+  </div>
+
+  <p class="hidden-note">料金・内容・実績の詳細は、審査通過後にのみ開示されます。</p>
+
+  <footer>PATTERN D — 会員制・秘匿型サンプル（名称・内容はすべてサンプル表示）</footer>
+</div>
+</body>
+</html>
