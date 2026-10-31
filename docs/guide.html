@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>はじめに｜入り口デザイン・パッケージのつかいかた</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif; background:#fdfcf9; color:#26303e; line-height:1.85; }
+  .wrap { max-width:680px; margin:0 auto; padding:44px 20px 64px; }
+  .kicker { font-size:12px; letter-spacing:.16em; color:#b3924c; font-weight:800; }
+  h1 { font-size:27px; line-height:1.4; margin:10px 0 14px; }
+  h2 { font-size:19px; margin:38px 0 10px; padding-left:12px; border-left:5px solid #b3924c; }
+  p, li { font-size:15px; color:#3c4656; }
+  ol, ul { margin-left:22px; }
+  li { margin:6px 0; }
+  .big { background:#fff; border:1px solid #e8e2d2; border-radius:14px; padding:18px 20px; margin-top:14px; }
+  .big b { color:#a37f2c; }
+  table { width:100%; border-collapse:collapse; margin-top:12px; background:#fff; }
+  th, td { border:1px solid #e3e7ee; padding:10px 12px; font-size:14px; text-align:left; }
+  th { background:#f6f7f9; }
+  .ptn { font-weight:800; white-space:nowrap; }
+  .warn { background:#fff7ea; border:1px solid #f0d9a8; border-radius:12px; padding:14px 18px; font-size:14px; margin-top:14px; }
+  a { color:#3556e8; }
+  footer { margin-top:44px; font-size:12px; color:#9aa3b5; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">まず読むページ</div>
+  <h1>このパッケージの、つかいかた</h1>
+  <p>これは、ホームページの「入り口」（最初に開くページ）の見本が4つ入ったセットです。むずかしい準備はいりません。<b>フォルダを置くだけで、そのままホームページとして開けます。</b></p>
+
+  <div class="big">
+    <p><b>中身はこれだけです</b></p>
+    <ul>
+      <li>一覧ページ（4つの見本への入口）… <b>index.html</b></li>
+      <li>見本A〜D … <b>a / b / c / d</b> の各フォルダ</li>
+      <li>この説明ページ … <b>guide.html</b></li>
+    </ul>
+  </div>
+
+  <h2>1. どれを選ぶ？（30秒で決まります）</h2>
+  <table>
+    <tr><th>パターン</th><th>こんな時に</th><th>形の特徴</th></tr>
+    <tr><td class="ptn">A アプリLP型</td><td>サービスやアプリを紹介したい</td><td>写真 → 数字 → 使い方 → 料金 → 申し込み、の順に読ませる</td></tr>
+    <tr><td class="ptn">B プロフィール型</td><td>個人のページ、リンク集を作りたい</td><td>丸いアイコンと名前が主役。リンクを縦に並べる</td></tr>
+    <tr><td class="ptn">C 差し込み型</td><td>占い・天気など、毎日変わる内容がある</td><td>いつものページの一番上に「今日の結果」を差し込む</td></tr>
+    <tr><td class="ptn">D 会員制型</td><td>会員制・紹介制など、限られた人向け</td><td>全部は見せない。約束は1つだけ大きく、詳細は審査の先</td></tr>
+  </table>
+  <p style="margin-top:10px;">迷ったら、<a href="index.html">一覧ページ</a>から4つを開いて比べてみてください。</p>
+
+  <h2>2. 公開のしかた（3通り、どれでもOK）</h2>
+  <ol>
+    <li><b>レンタルサーバー</b> … フォルダの中身をそのままアップロードする</li>
+    <li><b>GitHub Pages</b> … このフォルダを置くだけでURLが発行される（無料）</li>
+    <li><b>制作側へ依頼</b> … このフォルダを渡せば、そのまま使ってもらえる</li>
+  </ol>
+  <p>プログラムの組み立て（ビルド）は不要です。ファイルを開けば中身がそのまま表示されます。</p>
+
+  <h2>3. 差し替えるところ</h2>
+  <ul>
+    <li>文章と数字 … いま入っているのは<b>見本用の仮の内容</b>です。実際の中身に書き換えてください</li>
+    <li>色 … 各ページのファイル上部（style の中）で変えられます</li>
+    <li>写真・アイコン … 置きたい画像に差し替えてください（見本では絵文字と図形で代用しています）</li>
+  </ul>
+
+  <div class="warn"><b>パターンDだけ注意：</b>「実績」として数字を出す時は、ほんとうの数字だけにしてください。会員制の型は、盛らないことが信頼になります。</div>
+
+  <h2>4. こまったら</h2>
+  <p>各見本ページの一番下に、パターン名が書いてあります。「パターン○の、ここを変えたい」と伝えれば、作った側はすぐに分かります。</p>
+
+  <footer>Entrance Design Default Package — Guide</footer>
+</div>
+</body>
+</html>
